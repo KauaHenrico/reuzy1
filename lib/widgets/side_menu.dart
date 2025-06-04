@@ -22,8 +22,8 @@ class SideMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: Alignment.centerLeft,
-      child: Material( // <-- Adicione este Material aqui!
+      alignment: Alignment.centerRight, // <-- Troque para right!
+      child: Material(
         color: Colors.white,
         child: Container(
           width: MediaQuery.of(context).size.width * 0.85,

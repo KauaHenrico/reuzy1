@@ -136,7 +136,7 @@ class CustomChatAppBar extends StatelessWidget implements PreferredSizeWidget {
                     transitionBuilder: (context, anim1, anim2, child) {
                       return SlideTransition(
                         position: Tween(
-                          begin: const Offset(-1, 0),
+                          begin: const Offset(1, 0), // Direita para esquerda
                           end: Offset.zero,
                         ).animate(anim1),
                         child: child,
