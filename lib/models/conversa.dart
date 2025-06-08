@@ -1,5 +1,3 @@
-import 'package:reuzy/models/conversa.dart';
-
 class Conversa {
   final String nome;
   final String foto;

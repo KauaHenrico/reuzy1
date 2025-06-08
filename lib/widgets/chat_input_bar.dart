@@ -33,9 +33,6 @@ class ChatScreen extends StatelessWidget {
               _controller.clear();
             }
           },
-          onImage: () {
-            // Lógica para enviar imagem
-          },
           onMic: () {
             // Lógica para gravação de áudio
           },
@@ -85,10 +82,6 @@ class ChatInputBar extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 8),
-          IconButton(
-            icon: const Icon(Icons.photo_camera, color: Color(0xFF146356)),
-            onPressed: onImage,
-          ),
           IconButton(
             icon: const Icon(Icons.mic, color: Color(0xFF146356)),
             onPressed: onMic,

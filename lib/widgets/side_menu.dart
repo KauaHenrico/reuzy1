@@ -25,7 +25,7 @@ class SideMenu extends StatelessWidget {
       alignment: Alignment.centerRight, // <-- Troque para right!
       child: Material(
         color: Colors.white,
-        child: Container(
+        child: SizedBox(
           width: MediaQuery.of(context).size.width * 0.85,
           height: double.infinity,
           child: SafeArea(
@@ -105,6 +105,24 @@ class SideMenu extends StatelessWidget {
                           ),
                           onPressed: onHistorico,
                           child: const Text('Ver histórico de doações'),
+                        ),
+                      ),
+                      //config
+                      const SizedBox(height: 8),
+                      SizedBox(
+                        width: double.infinity,
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: const Color(0xFFB7E5B4),
+                            foregroundColor: Colors.black,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                          ),
+                          onPressed: () {
+                            // Ação de configurações
+                          },
+                          child: const Text('Configurações'),
                         ),
                       ),
                     ],
