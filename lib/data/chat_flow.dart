@@ -47,6 +47,11 @@ final List<Message> chatFlow = [
   Message(
     text: 'Vamos começar seu cadastro! Informe seu e‑mail:',
     type: MessageType.bot,
+  ),
+  // Mensagem de input para o e-mail
+  Message(
+    text: '',
+    type: MessageType.input,
     showInput: true,
   ),
   Message(
